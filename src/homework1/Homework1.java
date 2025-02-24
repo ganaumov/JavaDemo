@@ -7,6 +7,5 @@ public class Homework1 {
         int c = 6;
         int a = 4 * (b + c - 1) / 2;
         System.out.println(a);
-
     }
 }
