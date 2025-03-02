@@ -1,5 +1,7 @@
 package homework2;
 
+//задание 2
+
 import java.util.Scanner;
 
 public class Homework2 {

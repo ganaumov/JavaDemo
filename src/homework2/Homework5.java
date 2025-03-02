@@ -1,5 +1,7 @@
 package homework2;
 
+//задание 5
+
 import java.util.Scanner;
 
 public class Homework5 {
@@ -8,10 +10,10 @@ public class Homework5 {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int sum = 0;
-        for (int i = 1; i <= a ; i++) {
+        for (int i = 1; i <= a; i++) {
             System.out.println(sum += i);
         }
-        if (a <0){
+        if (a < 0) {
             System.out.println("Введенное число не подходит!");
         }
     }
