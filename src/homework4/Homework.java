@@ -16,9 +16,17 @@ public class Homework {
         while (count < 9) {
             System.out.println("Введите символ (X или O):");
             char symbol = scanner.next().charAt(0);
+            if (symbol != 'X' && symbol != 'O') {
+                System.out.println("Недопустимый символ. Введите 'X' или 'O'.");
+                continue;
+            }
             System.out.println("Введите номер строки и столбца (0-2):");
             int row = scanner.nextInt();
             int col = scanner.nextInt();
+            if (row < 0 || row > 2 || col < 0 || col > 2) {
+                System.out.println("Неверный ввод. Введите значения от 0 до 2.");
+                continue;
+            }
             if (array[row][col] == ' ') {
                 array[row][col] = symbol;
                 count++;
@@ -54,24 +62,18 @@ public class Homework {
 
     public static boolean checkWin(char[][] array, char symbol) {
         for (int i = 0; i < 3; i++) {
-            if (array[i][0] == symbol && array[i][1] == symbol && array[i][2] == symbol) {
+            if ((array[i][0] == symbol && array[i][1] == symbol && array[i][2] == symbol) ||
+                    (array[0][i] == symbol && array[1][i] == symbol && array[2][i] == symbol)) {
+                return true;
+            }
+
+            if (array[0][0] == symbol && array[1][1] == symbol && array[2][2] == symbol) {
+                return true;
+            }
+            if (array[0][2] == symbol && array[1][1] == symbol && array[2][0] == symbol) {
                 return true;
             }
         }
-
-        for (int i = 0; i < 3; i++) {
-            if (array[0][i] == symbol && array[1][i] == symbol && array[2][i] == symbol) {
-                return true;
-            }
-        }
-
-        if (array[0][0] == symbol && array[1][1] == symbol && array[2][2] == symbol) {
-            return true;
-        }
-        if (array[0][2] == symbol && array[1][1] == symbol && array[2][0] == symbol) {
-            return true;
-        }
-
         return false;
     }
 }
