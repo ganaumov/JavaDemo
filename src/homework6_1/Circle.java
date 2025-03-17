@@ -1,5 +1,6 @@
 package homework6_1;
 
+// Текст для гита
 
 class Circle extends Figure {
     private double radius;

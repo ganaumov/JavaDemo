@@ -1,5 +1,7 @@
 package homework6_1;
 
+// Текст
+
 abstract class Figure {
     double x;
     double y;

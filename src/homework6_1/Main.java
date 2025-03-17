@@ -1,5 +1,7 @@
 package homework6_1;
 
+// Текст
+
 public class Main {
     public static void main(String[] args) {
         Figure[] figures = new Figure[5];

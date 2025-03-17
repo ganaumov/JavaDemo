@@ -1,5 +1,7 @@
 package homework6_1;
 
+// Текст
+
 class Rectangle extends Figure {
     double width;
     double height;

@@ -1,5 +1,7 @@
 package homework6_1;
 
+// Текст
+
 class Triangle extends Figure {
     double sideA;
     double sideB;
