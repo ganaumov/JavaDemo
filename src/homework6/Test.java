@@ -1,5 +1,7 @@
 package homework6;
 
+// Текст для гитхаба
+
 public class Test {
     public static void main(String[] args) {
 

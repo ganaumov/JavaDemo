@@ -1,5 +1,7 @@
 package homework6;
 
+// Текст для гитхаба
+
 class healthPlan {
     int code;
 

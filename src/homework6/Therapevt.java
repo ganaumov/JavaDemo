@@ -1,5 +1,5 @@
 package homework6;
-
+// Текст для гитхаба
 class Therapevt extends Doctor {
     @Override
     void treat() {
